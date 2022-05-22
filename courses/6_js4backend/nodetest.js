@@ -1,4 +1,3 @@
-// /*
 const client = {
   name: 'Jane Doe',
   age: 25,
@@ -12,6 +11,5 @@ const client = {
     console.log(`I'm ${this.name} and my email address is ${this.email}`);
   }
 }
-// */
 
 client.presentation();
