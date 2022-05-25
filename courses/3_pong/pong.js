@@ -275,7 +275,7 @@ function restartMatch (direction) {
     racket.pos.y = myCanvas.height / 2 - racket.height / 2 + 30;
     racketEnemy.pos.y = myCanvas.height / 2 - racketEnemy.height / 2 + 30;
     ball.pos.x = myCanvas.width / 2;
-    ball.pos.y = myCanvas.height / 2 + 30;
+    ball.pos.y = myCanvas.height / 2 + 10;
     ball.speedX = direction;
     ball.speedY = 0.3;
     gameIsPaused = true;

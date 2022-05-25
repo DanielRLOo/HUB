@@ -4,12 +4,15 @@ html {
     background: black;
     font-size: 20px;
     font-family: 'Source Code Pro';
-    color: green;
+}
+
+main {
+  background-color: white;
 }
 
 .codeFont {
     font-family: 'Source Code Pro';
-    color: green;
+    color: #008800;
 }
 
 .noselect {
@@ -23,3 +26,7 @@ html {
 }
 
 /*--------------------------------*/
+
+.content {
+  display: inline;
+}
