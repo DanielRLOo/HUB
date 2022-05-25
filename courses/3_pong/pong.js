@@ -307,6 +307,8 @@ function restartGame () {
     score.cpu = 0;
     restartMatch(3);
     restart = false;
+    racket.height = 130;
+    racketEnemy.height = 130;
     racket.pos.y = myCanvas.height / 2 - racket.height / 2 + 30;
     racketEnemy.pos.y = myCanvas.height / 2 - racketEnemy.height / 2 + 30;
 }
