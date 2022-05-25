@@ -18,17 +18,14 @@
     const input = document.querySelector("[name='todo']");
     const todoList = document.getElementById('todos');
 
-    const existingTodos = JSON.parse(localStorage.getItem('todos'));
+    //localStorage.clear();
 
-    const  todoData = existingTodos || [];
+    const existingTodos = JSON.parse(localStorage.getItem('todos')) || [];
 
-    (() => {
-      localStorage.clear();
-    })()
+    const todoData = [];
 
-    todoData.forEach((todo) => {
+    existingTodos.forEach((todo) => {
       addTodo(todo);
-      localStorage.removeItem(todo);
     });
 
     function addTodo (todoText) {
@@ -37,11 +34,11 @@
       li.innerHTML = todoText;
       todoList.appendChild(li);
       localStorage.setItem('todos', JSON.stringify(todoData));
+      console.log(localStorage);
     }
 
     form.onsubmit = (event) => {
       event.preventDefault();
-      console.log(input.value);
       addTodo(input.value);
     }
 
