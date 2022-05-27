@@ -151,7 +151,7 @@ label #closeMenu{
    transition: .4s margin-left ease;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
   .dashboardGrid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-rows: 250px;
