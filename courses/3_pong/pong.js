@@ -1,6 +1,6 @@
 const myCanvas = document.getElementById('myCanvas');
-myCanvas.width = 900;
-myCanvas.height = 600;
+myCanvas.width = window.innerWidth;
+myCanvas.height = window.innerHeight;
 myCanvas.style.backgroundColor = 'black';
 myCanvas.style.margin = 0;
 const ctx = myCanvas.getContext('2d');
@@ -59,8 +59,8 @@ var gameIsPaused = true;
 document.onkeydown = getKeyDown;
 document.onkeyup = getKeyUp;
 setInterval(renderGame, 1);
-var scoreSound = new Audio('sounds/ponto.mp3');
-var racketHitSound = new Audio('sounds/raquetada.mp3');
+var scoreSound = new Audio('courses/3_pong/sounds/ponto.mp3');
+var racketHitSound = new Audio('courses/3_pong/sounds/raquetada.mp3');
 
 function renderGame () {
     if (gameIsPaused === false) {
